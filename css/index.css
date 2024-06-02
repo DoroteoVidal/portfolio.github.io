@@ -9,7 +9,7 @@
 }
 
 body, html {
-    background-color: #141c1d;
+    background-color: #0F100F;
     height: 100vh;
 }
 
@@ -17,7 +17,7 @@ body, html {
     transition: all .3s;
     width: 100%;
     height: 28px;
-    background-color: #283335;
+    background-color: #161616;
     display: flex;
 }
 
@@ -62,7 +62,7 @@ body, html {
     transition: all .3s;
     width: 100%;
     height: 32px;
-    background-color: rgb(28, 38, 39);
+    background-color: rgb(11, 12, 12);
     display: flex;
     justify-content: space-between;
 }
@@ -80,6 +80,7 @@ body, html {
     height: 100%;
     text-align: center;
     color: #e0e0e0;
+    background-color: #181818;
     line-height: 32px;
     font-size: 14px;
     cursor: pointer;
@@ -87,11 +88,11 @@ body, html {
 }
 
 .navbar .navbar-list .navbar-item:hover {
-    background-color: rgb(83, 95, 97);
+    background-color: rgb(85, 87, 87);
 }
 
 .selected {
-    background-color: #141c1d;
+    background-color: #0F100F !important;
     color: #a2c11c !important;
     border-top: 2px solid #a2c11c;
 }
@@ -108,7 +109,7 @@ body, html {
     width: 46px;
     height: 100%;
     line-height: 32px;
-    background-color: rgb(34, 45, 46);
+    background-color: #181818;
     color: #e0e0e0;
 }
 
@@ -133,7 +134,7 @@ body, html {
 #content .indent-guide-lines article p {
     width: 36px;
     height: 24px;
-    color: #283335;
+    color: rgba(92, 92, 92, 0.274);
     font-size: 16px;
     transition: all .3s;
 }
@@ -179,7 +180,7 @@ footer {
     transition: all .3s;
     width: 100%;
     height: 28px;
-    background-color: rgb(28, 38, 39);
+    background-color: rgb(11, 12, 12);
     position: absolute;
     bottom: 0;
     display: flex;
@@ -235,38 +236,8 @@ footer a img {
 
 @media only screen and (min-width: 1760px) {
 
-    .toolbar {
-        height: 32px;
-    }
-
-    .toolbar .portfolio-title p {
-        font-size: 16px;
-    }
-
-    .toolbar .portfolio-buttons {
-        height: 32px; 
-    }
-
-    .navbar {
-        height: 36px;
-    }
-
-    .navbar .navbar-list .navbar-item {
-        width: 140px;
-        line-height: 36px;
-        font-size: 16px;
-    }
-
-    .navbar .config-button span {
-        line-height: 36px;
-    }
-
-    #content {
-        height: calc(100vh - 100px);
-    }
 
     #content .indent-guide-lines article p {
-        padding: 11px 0;
         width: 42px;
     }
 
@@ -276,14 +247,6 @@ footer a img {
     
     #content .portfolio-name h1 {
         font-size: 88px;
-    }
-
-    footer {
-        height: 32px;
-    }
-
-    footer p {
-        font-size: 16px;
     }
 
 }
