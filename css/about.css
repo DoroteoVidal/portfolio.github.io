@@ -1,0 +1,44 @@
+.about-aside {
+    width: 16%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: #283335;
+}
+
+.about-aside h4 {
+    font-size: 30px;
+    font-weight: 460;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: #e0e0e0;
+}
+
+.about-aside ul .aside-about-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #a2c11c;
+    height: 40px;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.aside-about-selected {
+    background-color: #141c1d;
+}
+
+.about-aside ul li:hover {
+    background-color: rgb(83, 95, 97);
+}
+
+#about-content {
+    width: 84%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+}
