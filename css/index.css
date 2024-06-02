@@ -76,10 +76,10 @@ body, html {
 
 .navbar .navbar-list .navbar-item {
     list-style: none;
-    width: 100px;
+    width: 130px;
     height: 100%;
     text-align: center;
-    color: #a2c11c;
+    color: #e0e0e0;
     line-height: 32px;
     font-size: 14px;
     cursor: pointer;
@@ -93,7 +93,8 @@ body, html {
 
 .selected {
     background-color: #141c1d;
-    border-top: 1px solid #a2c11c;
+    color: #a2c11c !important;
+    border-top: 2px solid #a2c11c;
 }
 
 .navbar .config-button {
