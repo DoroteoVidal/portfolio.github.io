@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background-color: #283335;
+    background-color: #161616;
 }
 
 .about-aside h4 {
@@ -29,16 +29,42 @@
 }
 
 .aside-about-selected {
-    background-color: #141c1d;
+    background-color: #0F100F !important;
 }
 
 .about-aside ul li:hover {
-    background-color: rgb(83, 95, 97);
+    background-color: rgb(85, 87, 87);
 }
 
-#about-content {
+.about-content-section {
     width: 84%;
     height: 100%;
     display: flex;
     justify-content: start;
+}
+
+.about-content-section section {
+    margin-left: 60px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    width: 60px !important;
+    align-items: start !important;
+}
+
+.about-content-section section article p {
+    width: 60px !important;
+}
+
+#about-content {
+    margin-left: 0 !important;
+    margin-top: 74px !important;
+    width: calc(100% - 120px) !important;
+}
+
+.about-title {
+    font-size: 30px;
+    font-weight: 660;
+    color: #e0e0e0;
+    position: relative;
+    left: -4px;
 }
