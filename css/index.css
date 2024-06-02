@@ -112,27 +112,30 @@ body, html {
     color: #e0e0e0;
 }
 
-main {
-    margin: 0 5%;
-    width: 90%;
-    height: calc(100vh - 120px);
+#content {
+    width: 100%;
+    height: calc(100vh - 88px);
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    transition: all .6s;
 }
 
-main .indent-guide-lines {
-    width: 20%;
+#content .indent-guide-lines {
+    width: 18%;
+    height: 100%;
+    margin-left: 5%;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-main .indent-guide-lines article p {
+#content .indent-guide-lines article p {
     width: 36px;
-    height: 12px;
-    padding: 10px 0;
+    height: 24px;
     color: #283335;
+    font-size: 16px;
     transition: all .4s;
 }
 
@@ -140,33 +143,36 @@ main .indent-guide-lines article p {
     border-right: 1px solid;
 }
 
-main .portfolio-name {
-    width: 44%;
+#content .portfolio-name {
+    width: 40%;
+    height: 100%;
     color: #e0e0e0;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-main .portfolio-name h4 {
+#content .portfolio-name h4 {
     transition: all .8s;
     font-size: 14px;
     font-weight: 600;
 }
 
-main .portfolio-name h1 {
+#content .portfolio-name h1 {
     transition: all .8s;
     font-size: 62px;
 }
 
-main .cover-photo {
-    width: 36%;
+#content .cover-photo {
+    width: 32%;
+    height: 100%;
+    margin-right: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main .cover-photo img {
+#content .cover-photo img {
     width: 90%;
 }
 
@@ -201,29 +207,29 @@ footer a img {
 
 @media only screen and (min-width: 1320px) {
 
-    main .indent-guide-lines article p {
+    #content .indent-guide-lines article p {
         width: 40px;
     }
 
-    main .portfolio-name h1 {
+    #content .portfolio-name h1 {
         font-size: 66px;
     }
 
-    main .portfolio-name h4 {
+    #content .portfolio-name h4 {
         font-size: 18px;
     }
 }
 
 @media only screen and (min-width: 1480px) {
 
-    main .portfolio-name h1 {
+    #content .portfolio-name h1 {
         font-size: 72px;
     }
 }
 
 @media only screen and (min-width: 1640px) {
 
-    main .portfolio-name h1 {
+    #content .portfolio-name h1 {
         font-size: 78px;
     }
 }
@@ -255,16 +261,20 @@ footer a img {
         line-height: 36px;
     }
 
-    main .indent-guide-lines article p {
+    #content {
+        height: calc(100vh - 100px);
+    }
+
+    #content .indent-guide-lines article p {
         padding: 11px 0;
         width: 42px;
     }
 
-    main .portfolio-name h4 {
+    #content .portfolio-name h4 {
         font-size: 20px;
     }
     
-    main .portfolio-name h1 {
+    #content .portfolio-name h1 {
         font-size: 88px;
     }
 
