@@ -45,9 +45,8 @@
 
 .about-content-section section {
     margin-left: 60px !important;
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
     width: 60px !important;
+    padding-top: 50px;
     align-items: start !important;
 }
 
@@ -57,7 +56,7 @@
 
 #about-content {
     margin-left: 0 !important;
-    margin-top: 74px !important;
+    margin-top: 30px !important;
     width: calc(100% - 120px) !important;
 }
 
@@ -67,4 +66,10 @@
     color: #e0e0e0;
     position: relative;
     left: -4px;
+}
+
+@media only screen and (min-width: 1760px) {
+    .about-content-section section article p {
+        height: 30px !important;
+    }
 }

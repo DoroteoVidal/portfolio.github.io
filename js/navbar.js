@@ -21,12 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     document.body.addEventListener("click", function(event) {
-        if(event.target.matches("#hello, #projects")) {
+        if(event.target.matches("#hello, #about, #projects")) {
             push(event, ".navbar-item", "selected", "#content");
-
-        } else if(event.target.matches("#about")) {
-            push(event, ".navbar-item", "selected", "#content");
-            observeDOM();
         } else if(event.target.matches("#biography, #experience, #education, #skills")) {
             push(event, ".aside-about-item", "aside-about-selected", "#about-content");
         }
