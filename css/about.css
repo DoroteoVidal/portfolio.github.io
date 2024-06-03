@@ -43,29 +43,31 @@
     justify-content: start;
 }
 
-.about-content-section section {
+.about-content-section .indent-guide-lines {
     margin-left: 60px !important;
     width: 60px !important;
     padding-top: 50px;
     align-items: start !important;
 }
 
-.about-content-section section article p {
+.about-content-section .indent-guide-lines article p {
     width: 60px !important;
-}
-
-#about-content {
-    margin-left: 0 !important;
-    margin-top: 30px !important;
-    width: calc(100% - 120px) !important;
 }
 
 .about-title {
     font-size: 30px;
     font-weight: 660;
+    margin-top: 58px;
     color: #e0e0e0;
     position: relative;
     left: -4px;
+}
+
+#about-content {
+    margin-left: 0 !important;
+    width: calc(100% - 120px) !important;
+    display: flex;
+    flex-direction: column;
 }
 
 @media only screen and (min-width: 1760px) {

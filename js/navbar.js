@@ -21,11 +21,31 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     document.body.addEventListener("click", function(event) {
-        if(event.target.matches("#hello, #about, #projects")) {
+        if(event.target.matches("#hello, #projects")) {
             push(event, ".navbar-item", "selected", "#content");
+
+        } else if(event.target.matches("#about")) {
+            push(event, ".navbar-item", "selected", "#content");
+            showBiographyFirst();
+
         } else if(event.target.matches("#biography, #experience, #education, #skills")) {
             push(event, ".aside-about-item", "aside-about-selected", "#about-content");
         }
     });
+
+    function showBiographyFirst() {
+        fetch("html/about.html").then(response => {
+            if(!response.ok) {
+                throw new Error("Network response was not ok " + response.statusText);
+            }
+            return response.text();
+            
+        }).then(() => {
+            selectTab("biography", ".aside-about-item", "aside-about-selected");
+            showHtml(`html/biography.html`, "#about-content");
+        });
+       
+        
+    }
 
 });
