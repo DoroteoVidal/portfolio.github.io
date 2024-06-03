@@ -1,4 +1,4 @@
-.about-aside {
+.portfolio-aside {
     width: 16%;
     height: 100%;
     display: flex;
@@ -7,7 +7,7 @@
     background-color: #161616;
 }
 
-.about-aside h4 {
+.portfolio-aside h4 {
     font-size: 30px;
     font-weight: 460;
     margin-top: 28px;
@@ -16,7 +16,7 @@
     color: #e0e0e0;
 }
 
-.about-aside ul .aside-about-item {
+.portfolio-aside ul li {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -28,11 +28,11 @@
     transition: all .3s;
 }
 
-.aside-about-selected {
+.aside-selected {
     background-color: #0F100F !important;
 }
 
-.about-aside ul li:hover {
+.portfolio-aside ul li:hover {
     background-color: rgb(85, 87, 87);
 }
 
@@ -68,6 +68,21 @@
     width: calc(100% - 120px) !important;
     display: flex;
     flex-direction: column;
+}
+
+.biography-text {
+    width: 82%;
+    margin-right: 18%;
+}
+
+.biography-text p {
+    font-size: 14px;
+    margin-left: 20px;
+    color: #e0e0e0;
+}
+
+.biography-text p:nth-child(1) {
+    margin-top: 50px;
 }
 
 @media only screen and (min-width: 1760px) {

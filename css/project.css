@@ -1,0 +1,6 @@
+#project-content {
+    margin-left: 0 !important;
+    width: calc(100% - 120px) !important;
+    display: flex;
+    flex-direction: column;
+}
