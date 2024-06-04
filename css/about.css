@@ -97,11 +97,19 @@
     flex-direction: column;
 }
 
-.about-section-row .about-img {
-    width: 80px;
-    height: 62px;
+.about-section-row .about-img {  
     margin-top: 36px;
     margin-left: -4px;
+}
+
+.rectangle-img {
+    width: 70px;
+    height: 44px;
+}
+
+.circle-img {
+    width: 60px;
+    height: 60px;
 }
 
 .about-section-row .indent-guide-lines {
@@ -111,7 +119,6 @@
 .about-section-col h2 {
     font-size: 18px;
     font-weight: 440;
-    margin-top: 56px;
     margin-left: 20px;
     color: #e0e0e0;
 }
@@ -125,7 +132,7 @@
 }
 
 .about-section-row .experience-date {
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(92, 92, 92);
     margin-top: 30px;
     margin-left: 20px;
