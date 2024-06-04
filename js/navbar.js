@@ -21,36 +21,51 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     document.body.addEventListener("click", function(event) {
+
+        // ----Nav-bar----
         if(event.target.matches("#hello")) {
             push(event, ".navbar-item", "selected", "html/hello.html", "#content");
 
         } else if(event.target.matches("#projects")) {
             push(event, ".navbar-item", "selected", "html/projects.html", "#content");
-            doFirst("html/projects.html", "html/projects/eCommerce.html", "eCommerce", "#project-content");
+            showFirst("html/projects.html", "html/projects/eCommerce.html", "eCommerce", "#project-content");
 
         } else if(event.target.matches("#about")) {
             push(event, ".navbar-item", "selected", "html/about.html", "#content");
-            doFirst("html/about.html", "html/about/biography.html", "biography", "#about-content");
+            showFirst("html/about.html", "html/about/biography.html", "biography", "#about-content");
 
+        // ----About-sidebar----
         } else if(event.target.matches("#biography, #experience, #education")) {
             push(event, ".aside-item", "aside-selected", `html/about/${event.target.id}.html`, "#about-content");
 
+        // ----Skills-sidebar----
         } else if(event.target.matches("#skills")) {
-            push(event, ".aside-item", "aside-selected", "html/about/skills.html", "#about-content");
-            document.querySelector("#skills").firstElementChild.classList.add("drop-down");
-            document.querySelector("#skills-items").classList.add("show");
+            showFirst("html/about.html", "html/skills/technologies.html", "technologies", "#about-content");
+            addClass("#skills", "#skills-items");
         
+        } else if(event.target.matches("#technologies, #softSkills")) {
+            push(event, ".aside-item", "aside-selected", `html/skills/${event.target.id}.html`, "#about-content");
+        
+        // ----Extras-sidebar----
         } else if(event.target.matches("#extras")) {
-            push(event, ".aside-item", "aside-selected", "html/about/extras.html", "#about-content"); 
-            document.querySelector("#extras").firstElementChild.classList.add("drop-down");
-            document.querySelector("#extras-items").classList.add("show");
+            showFirst("html/about.html", "html/extras/certificates.html", "certificates", "#about-content");
+            addClass("#extras", "#extras-items");
         
+        } else if(event.target.matches("#certificates, #hobbies, #languages")) {
+            push(event, ".aside-item", "aside-selected", `html/extras/${event.target.id}.html`, "#about-content");
+
+        // -----Project-sidebar-----
         } else if(event.target.matches("#eCommerce, #scooters, #diary, #exams")) {
             push(event, ".aside-item", "aside-selected", `html/projects/${event.target.id}.html`, "#project-content");
         }
     });
 
-    function doFirst(path, htmlFile, id, container) {
+    function addClass(elementId, listItems) {
+        document.querySelector(elementId).firstElementChild.classList.add("drop-down");
+        document.querySelector(listItems).classList.add("show");
+    }
+
+    function showFirst(path, htmlFile, id, container) {
         fetch(path).then(response => {
             if(!response.ok) {
                 throw new Error("Network response was not ok " + response.statusText);
