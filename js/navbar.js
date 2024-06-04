@@ -32,9 +32,19 @@ document.addEventListener("DOMContentLoaded", function() {
             push(event, ".navbar-item", "selected", "html/about.html", "#content");
             doFirst("html/about.html", "html/about/biography.html", "biography", "#about-content");
 
-        } else if(event.target.matches("#biography, #experience, #education, #skills")) {
+        } else if(event.target.matches("#biography, #experience, #education")) {
             push(event, ".aside-item", "aside-selected", `html/about/${event.target.id}.html`, "#about-content");
 
+        } else if(event.target.matches("#skills")) {
+            push(event, ".aside-item", "aside-selected", "html/about/skills.html", "#about-content");
+            document.querySelector("#skills").firstElementChild.classList.add("drop-down");
+            document.querySelector("#skills-items").classList.add("show");
+        
+        } else if(event.target.matches("#extras")) {
+            push(event, ".aside-item", "aside-selected", "html/about/extras.html", "#about-content"); 
+            document.querySelector("#extras").firstElementChild.classList.add("drop-down");
+            document.querySelector("#extras-items").classList.add("show");
+        
         } else if(event.target.matches("#eCommerce, #scooters, #diary, #exams")) {
             push(event, ".aside-item", "aside-selected", `html/projects/${event.target.id}.html`, "#project-content");
         }
