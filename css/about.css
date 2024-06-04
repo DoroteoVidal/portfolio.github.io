@@ -66,7 +66,7 @@
 
 #about-content {
     margin-left: 0 !important;
-    width: 100%;
+    padding-right: 10%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -103,8 +103,8 @@
 }
 
 .rectangle-img {
-    width: 70px;
-    height: 44px;
+    width: 82px;
+    height: 60px;
 }
 
 .circle-img {
@@ -117,8 +117,12 @@
 }
 
 .about-section-col h2 {
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
     font-size: 18px;
     font-weight: 440;
+    height: 60px;
     margin-left: 20px;
     color: #e0e0e0;
 }
