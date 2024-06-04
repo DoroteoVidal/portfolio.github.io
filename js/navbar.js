@@ -50,9 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }).then(() => {
             selectTab(id, ".aside-item", "aside-selected");
             showHtml(htmlFile, container);
-        });
-       
-        
+        });  
     }
 
 });
