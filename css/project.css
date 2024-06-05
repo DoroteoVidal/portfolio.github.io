@@ -1,6 +1,6 @@
 #project-content {
     margin-left: 0 !important;
-    width: calc(100% - 120px) !important;
+    padding-right: 5%;
     display: flex;
     flex-direction: row;
 }
