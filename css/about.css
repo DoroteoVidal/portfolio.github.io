@@ -179,14 +179,14 @@
     margin-left: 20px;
 }
 
-.technologies-stack ul li {
+.technologies-list ul li, .softskills-list ul li {
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.technologies-stack ul li p {
+.technologies-list ul li p, .softskills-list ul li {
     margin-left: 20px;
     color: rgb(92, 92, 92);
     font-size: 16px;
