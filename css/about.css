@@ -94,7 +94,7 @@
     padding-right: 10%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .biography-text {
@@ -179,21 +179,16 @@
     margin-left: 20px;
 }
 
-.technologies-list ul li, .softskills-list ul li {
+.section-list ul li {
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.technologies-list ul li p, .softskills-list ul li {
+.section-list ul li p, .section-list ul li {
     margin-left: 20px;
     color: rgb(92, 92, 92);
     font-size: 16px;
 }
 
-@media only screen and (min-width: 1760px) {
-    .about-content-section section article p {
-        height: 30px !important;
-    }
-}
