@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
             push(event, ".aside-item", "aside-selected", `html/extras/${event.target.id}.html`, "#about-content");
 
         // -----Project-sidebar-----
-        } else if(event.target.matches("#eCommerce, #scooters, #diary, #exams")) {
+        } else if(event.target.matches("#eCommerce, #tests, #diary, #exams, #scooters")) {
             push(event, ".aside-item", "aside-selected", `html/projects/${event.target.id}.html`, "#project-content");
         }
     });
